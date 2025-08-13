@@ -2,40 +2,41 @@ package ru.condition;
 
 public class SwitchWeek {
     public static String nameOfDay(int day) {
-        String name = null;
-        if (day > 0 && day <= 7) {
-            switch (day) {
-                case 1:
-                    name = "Понедельник";
-                    break;
+        String name;
 
-                case 2:
-                    name = "Вторник";
-                    break;
+        switch (day) {
+            case 1:
+                name = "Понедельник";
+                break;
 
-                case 3:
-                    name = "Среда";
-                    break;
+            case 2:
+                name = "Вторник";
+                break;
 
-                case 4:
-                    name = "Четверг";
-                    break;
+            case 3:
+                name = "Среда";
+                break;
 
-                case 5:
-                    name = "Пятница";
-                    break;
+            case 4:
+                name = "Четверг";
+                break;
 
-                case 6:
-                    name = "Суббота";
-                    break;
+            case 5:
+                name = "Пятница";
+                break;
 
-                case 7:
-                    name = "Воскресенье";
-                    break;
-            }
-        } else {
-            return "Ошибка";
+            case 6:
+                name = "Суббота";
+                break;
+
+            case 7:
+                name = "Воскресенье";
+                break;
+
+            default:
+                name = "Ошибка";
         }
+
         return name;
     }
 }
