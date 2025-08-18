@@ -21,7 +21,7 @@ class CheckPrimeNumberTest {
 
     @Test
     void when1() {
-        int number = 20;
+        int number = 1;
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
