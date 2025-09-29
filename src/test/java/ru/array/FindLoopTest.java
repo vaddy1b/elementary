@@ -10,7 +10,8 @@ class FindLoopTest {
         int el = 2;
         int[] arr = new int[]{1, 2, 3, 4};
         int res = FindLoop.indexOf(arr, el);
-        assertThat(res).isEqualTo(el);
+        int exp = 1;
+        assertThat(res).isEqualTo(exp);
     }
 
     @Test
