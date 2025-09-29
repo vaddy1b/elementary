@@ -14,11 +14,11 @@ class FindLoopTest {
     }
 
     @Test
-    void whenElementNotContainedInArray() {
-        int el = 2;
+    void whenArrayHasNot10ThenMinus1() {
+        int el = 10;
         int[] arr = new int[]{1, 3, 4};
         int res = FindLoop.indexOf(arr, el);
-        assertThat(res).isNotEqualTo(el);
+        int exp = -1;
+        assertThat(res).isEqualTo(exp);
     }
-
 }
