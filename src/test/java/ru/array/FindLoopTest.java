@@ -22,4 +22,13 @@ class FindLoopTest {
         int exp = -1;
         assertThat(res).isEqualTo(exp);
     }
+
+    @Test
+    void whenFind4InArrayThen3() {
+        int el = 4;
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6};
+        int res = FindLoop.indexOf(arr, el);
+        int exp = 3;
+        assertThat(res).isEqualTo(exp);
+    }
 }

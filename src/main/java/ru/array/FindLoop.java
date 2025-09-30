@@ -5,9 +5,8 @@ public class FindLoop {
         int rst = -1;
         for (int i : data) {
             if (data[i] == el) {
-                rst = i;
+                return i;
             }
-            return rst;
         }
         return rst;
     }
