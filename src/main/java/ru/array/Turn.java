@@ -1,14 +1,13 @@
 package ru.array;
 
 public class Turn {
-    @SuppressWarnings("checkstyle:WhitespaceAround")
-    public static int[] back(int[] arr) {
-        for (int i = 0; i < arr.length / 2; i++) {
-            int oppositeIndex = arr.length - 1 - i;
-            int temp = arr[i];
-            arr[i] = arr[oppositeIndex];
-            arr[oppositeIndex] = temp;
+    public static int[] back(int[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            int oppositeIndex = array.length - 1 - i;
+            int temp = array[i];
+            array[i] = array[oppositeIndex];
+            array[oppositeIndex] = temp;
         }
-        return arr;
+        return array;
     }
 }
